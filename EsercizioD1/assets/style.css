@@ -1,0 +1,83 @@
+button{
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    max-height: 40px;
+}
+
+.container{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-image: url('sassofonista.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container-block{
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 280px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.417);
+    
+}
+
+@keyframes animazione1{
+    from{margin-top: 10px;}
+    to{margin-top: 100px;}
+}
+
+@keyframes animazione2{
+    from{margin-bottom: 10px;}
+    to{margin-bottom: 100px;}
+}
+
+#save-button{
+    width: 80px;
+    background-color: red;
+    color: white;
+    padding: 10px 0px;
+    margin-left: auto;
+}
+
+.container-save:hover{
+    animation-name: animazione1;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.container-button{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.container-save{
+    display: flex;
+    width: 280px;
+    height: 200px;
+    justify-content: flex-end;
+}
+
+.container-button:hover{
+    animation-name: animazione2;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.container-block:hover{
+    opacity: 1;
+    
+}
